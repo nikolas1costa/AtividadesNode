@@ -1,11 +1,14 @@
 //fazendo importacao do express
 const express = require ("express");
-const { default: mongoose } = require("mongoose");
-
-//rotas (quando o servidor for acessado, pra onde ele vai?)
-const router = express.Router();
-router.get('/', (req, res) => {res.send("Ola Mundo!")}); 
-
+const router = require ("./routes/index")
+const mustache = require ("mustache-express")
 app = express();
 app.use('/', router); 
-module.exports = app;
+
+app.use(express.json())
+app.engine("mst", mustache(__dirname + '/views/partials'))
+app.set("view engine", 'mst')
+
+app.set('views', __dirname + '/views/partials');
+
+module.exports = app; 

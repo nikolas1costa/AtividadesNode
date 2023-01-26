@@ -1,8 +1,5 @@
 <h1> Rota principal | Rota secundária (/rota2) | Rota terciária (/rota3) </h1>
 
-{{#mostrar}}
-<p>Nesta página é a pagina home...</p>
-<p> Nome: {{nome}} tem {{idade}} anos de idade </p>
 
 <ul>
     {{#disciplinas}}
@@ -19,10 +16,6 @@
     <li>{{.}}</li>
     {{/frutas}}
 </ul>
-    {{^frutas}}
-    <p>nao existe frutas</p>
-    {{/frutas}}
+
 
 <hr/>
-{{{teste}}}
-{{/mostrar}}

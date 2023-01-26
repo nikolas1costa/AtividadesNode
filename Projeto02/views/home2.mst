@@ -1,4 +1,4 @@
-<h1> PAGINA HOME </h1>
+<h1> PAGINA rota1 </h1>
 
 {{#mostrar}}
 <p>Nesta página é a pagina home...</p>

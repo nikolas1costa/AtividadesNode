@@ -6,9 +6,9 @@ app = express();
 app.use('/', router); 
 
 app.use(express.json())
-app.engine("mst", mustache(__dirname + '/views/partials'))
+app.engine("mst", mustache(__dirname + '/views/', 'mst'))
 app.set("view engine", 'mst')
 
-app.set('views', __dirname + '/views/partials');
+app.set('views', __dirname + '/views/');
 
 module.exports = app; 

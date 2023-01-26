@@ -1,4 +1,4 @@
-<h1> PAGINA rota1 </h1>
+<h1> Rota principal | Rota secundária (/rota2) | Rota terciária (/rota3) </h1>
 
 {{#mostrar}}
 <p>Nesta página é a pagina home...</p>
@@ -6,7 +6,7 @@
 
 <ul>
     {{#disciplinas}}
-    <li>Nome: {{nome}} - Qtde: {{qt}} </li>
+    <li>Matéria: {{nome}} - Horário: {{qt}} </li>
     {{/disciplinas}}
 </ul>
 

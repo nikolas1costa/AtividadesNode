@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require('fs');
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -9,33 +10,18 @@ router.get('/', (req, res) => {
 });
 
 router.get('/rota2', (req, res) => {
-    let horarios = {
-        segunda: {
-            disciplina: "Gestão Agil de Proj.",
-            hora: "7:40 até 11:20"
-        },
-        terca: {
-            disciplina: "BD não relacional",
-            hora: "7:40 até 11:20"
-        },
-        quarta: {
-            disciplina: "Dev. Web III",
-            hora: "7:40 até 11:20"
-        },
-        quinta: {
-            disciplina: "Álgebra Linear",
-            hora: "7:40 até 11:20"
-        },
-        sexta: {
-            disciplina: "Técnicas de Programação II",
-            hora: "7:40 até 11:20"
-        },
-    }
-    res.render('paginaSecundaria', horarios)
+    fs.readFile('horarios.json', 'utf8', (err, data) => {
+        if (err) throw err;
+        let obj = JSON.parse(data);
+        res.render('paginaSecundaria', obj)
+    });
 });
 
 router.get('/rota3', (req, res) => {
-
-    res.render('home2')
+    fs.readFile('historico.json', 'utf8', (err, data) => {
+        if (err) throw err;
+        let obj = JSON.parse(data);
+        res.render('paginaTerciaria', obj)
+    });
 });
 module.exports = router;

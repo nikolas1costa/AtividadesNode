@@ -1,0 +1,28 @@
+<nav style="display: flex; justify-content: center;">
+  <a href="/"> Rota Principal </a>
+  <a href="./rota2"> Rota secundária (/rota2) </a>
+  <a href="./rota3"> Rota terciária (/rota3) </a>
+</nav>
+
+<header> 
+
+    <style>
+    a{
+    background: #3e69b6;
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+    div.titulo {
+        text-align: center;
+        padding: 3vw;
+        position: relative;
+    }
+</style>
+<header> 

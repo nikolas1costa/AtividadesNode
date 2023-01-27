@@ -1,0 +1,88 @@
+{
+    "status": [
+        {
+            "nome": "Aprovado",
+            "materias": [
+                {
+                    "nome": "Algoritmo e Lógica de Programação"
+                },
+                {
+                    "nome": "Modelagem de Banco de Dados"
+                },
+                {
+                    "nome": "Engenharia de Software I"
+                },
+                {
+                    "nome": "Sistemas Operacionais e Redes de Computadores"
+                },
+                {
+                    "nome": "Desenvolvimento Web I"
+                },
+                {
+                    "nome": "Design Digital"
+                },
+                {
+                    "nome": "Banco de Dados - Relacional"
+                },
+                {
+                    "nome": "Estrutura de Dados"
+                },
+                {
+                    "nome": "Engenharia de Software II"
+                },
+                {
+                    "nome": "Técnica de Programação I"
+                },
+                {
+                    "nome": "Matemática para Computação"
+                }
+            ]
+        },
+        {
+            "nome": "Dispensado",
+            "materias": [
+                {
+                    "nome": "Interação Humano Computador"
+                },
+                {
+                    "nome": "Inglês I"
+                },
+                {
+                    "nome": "Inglês II"
+                },
+                {
+                    "nome": "Inglês III"
+                },
+                {
+                    "nome": "Estatística Aplicada"
+                }
+            ]
+        },
+        {
+            "nome": "Em Curso",
+            "materias": [
+                {
+                    "nome": "Gestão Ágil de Projetos de Software"
+                },
+                {
+                    "nome": "Estágio Supervisionado em Desenvolvimento de Software Multiplataforma"
+                },
+                {
+                    "nome": "Banco de Dados - Não relacional"
+                },
+                {
+                    "nome": "Técnica de Programação II"
+                },
+                {
+                    "nome": "Desenvolvimento Web II"
+                },
+                {
+                    "nome": "Desenvolvimento Web III"
+                },
+                {
+                    "nome": "Algebra Linear"
+                }
+            ]
+        }
+    ]
+}

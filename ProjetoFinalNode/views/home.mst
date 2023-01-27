@@ -1,20 +1,63 @@
-<h1 style="justify-content: center; display: flex;"> Voce está na Rota principal |<a href="localhost:3000/rota1"> Rota secundária (/rota2) </a>|<a href="localhost:3000/rota2"> Rota terciária (/rota3) </a></h1>
+{{> header }}
 
+<header> 
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <h1>Projeto final - Node | Express | MVC</h1>
+div.container {
+
+    }
+
+    div.titulo {
+        text-align: center;
+        padding: 3vw;
+        position: relative;
+    }
+
+    div.info1 {
+        width: 38%;
+        display: inline-block;
+        text-align: center;
+        padding: 5vw 0vw 5vw 0vw;
+        min-width:40vw;
+        background: #b5b5ee;
+        border-radius: 126px;
+    }
+
+    div.info2 {
+        width: 53%;
+        display: inline-block;
+        margin-right: 0vw;
+        text-align: center;
+        padding: 5vw 0vw 5vw 0vw;
+        min-width:40vw;
+        float:right;
+        background: #b5b5ee;
+        border-radius: 126px;
+    }
+    </style>
+</header>
+
+<div class="container">
+<div class="col-md-12"></div>
+<div class="titulo"><h1>Projeto final - Node | Express | MVC</h1></div>
+        
     </div>
 <div style="display: flex; flex-wrap: nowrap;">
-    <div style="width: auto; padding: 2px; display: flex; flex-direction: column;">
+    <div class="info1">
         <h3>Aluno: Níkolas Yan de Oliveira Costa</h3>
         <h3>Professor: Vinicius Heltai</h3>
-        <h3>Curso: Desenvolviment de Software Multiplataforma</h3>
+        <h3>Curso: Desenvolvimento de Software Multiplataforma</h3>
         <h3>Matéria: Desenvolvimento Web II (Reposição)</h3>
     </div>
+
+
 <hr>
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <br><br>
+    
         
+    <div class="info2">
         <ul>
             <li>Projeto deve ser realizado de forma individual;</li>
             <li>Desenvolver na arquitetura MVC (conforme aula do dia);</li>
@@ -24,7 +67,9 @@
                 <li>Rota secundária: Apresentar a grade de horário do 1ºSem/2023;</li>
                 <li>Rota terciária: Apresentar a estrutura (histórico escolar);</li>
             </ul>
+            <br>
             <li>O projeto deve ser desenvolvido em Node.JS com os frameworks Mustache e Express.</li>
             <li>As paginas devem ser criadas pelo servidor (webserver chamando as estruturas).</li>
         </ul>
     </div>
+</div>

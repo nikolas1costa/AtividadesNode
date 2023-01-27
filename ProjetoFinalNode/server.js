@@ -5,13 +5,6 @@ mongoose.set('strictQuery', false)
 
 require('dotenv').config({path:'variables.env'});
 
-// mongoose.connect(process.env.DATABASE, { useNewURLParser: true, useUnifiedTopology: true})
-// mongoose.Promise = global.Promise;
-// mongoose.connection.on('error', (error) => {
-//     console.error('ERROR: ' + error.message)
-// }) 
-
-
 app.set('port', process.env.PORT || 7777)
 const server = app.listen(app.get('port'), () => {
     console.log("Servidor rodando em: localhost:" +server.address().port);

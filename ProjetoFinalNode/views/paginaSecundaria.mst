@@ -1,21 +1,52 @@
-<h1> Rota principal | Rota secundária (/rota2) | Rota terciária (/rota3) </h1>
+{{> header }}
 
+<div class="titulo"><h1>Grade de horários</h1>
+<p>Está é a minha grade de horários!</p>
+<p>Outros alunos podem ter mais matérias, como inglês, ou IHC por exemplo.</p>
+</div><table border="1" align="center">
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Disciplina</th>
+            <th>Hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#segunda}}
+        <tr>
+            <td>Segunda</td>
+            <td>{{disciplina}}</td>
+            <td>{{hora}}</td>
+        </tr>
+        {{/segunda}}
+        {{#terca}}
+        <tr>
+            <td>Terça</td>
+            <td>{{disciplina}}</td>
+            <td>{{hora}}</td>
+        </tr>
+        {{/terca}}
+        {{#quarta}}
+        <tr>
+            <td>Quarta</td>
+            <td>{{disciplina}}</td>
+            <td>{{hora}}</td>
+        </tr>
+        {{/quarta}}
+        {{#quinta}}
+        <tr>
+            <td>Quinta</td>
+            <td>{{disciplina}}</td>
+            <td>{{hora}}</td>
+        </tr>
+        {{/quinta}}
+        {{#sexta}}
+        <tr>
+            <td>Sexta</td>
+            <td>{{disciplina}}</td>
+            <td>{{hora}}</td>
+        </tr>
+        {{/sexta}}
+    </tbody>
+</table>
 
-<ul>
-    {{#disciplinas}}
-    <li>Matéria: {{nome}} - Horário: {{qt}} </li>
-    {{/disciplinas}}
-</ul>
-
-<br/>
-
-<hr/>
-
-<ul>
-    {{#frutas}}
-    <li>{{.}}</li>
-    {{/frutas}}
-</ul>
-
-
-<hr/>

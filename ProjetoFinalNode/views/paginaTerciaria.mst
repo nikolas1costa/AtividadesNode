@@ -1,0 +1,25 @@
+{{> header }}
+
+<div class="titulo"><h1>Histórico</h1></div>
+<table border="1" align="center">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Materias</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#status}}
+      <tr>
+        <td>{{nome}}</td>
+        <td>
+          <ul>
+            {{#materias}}
+              <li>{{nome}}</li>
+            {{/materias}}
+          </ul>
+        </td>
+      </tr>
+    {{/status}}
+  </tbody>
+</table>
